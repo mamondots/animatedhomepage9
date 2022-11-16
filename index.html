@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/910ce80589.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>animated webdesign</title>
+</head>
+<body>
+    <div class="container">
+       <header>
+          <div class="logo">
+             <a href="">mamondots</a>
+          </div>
+          <div class="menu">
+             <ul>
+               <li><a href="">home</a></li>
+               <li><a href="">about</a></li>
+               <li><a href="">services</a></li>
+               <li><a href="">pricing</a></li>
+               <li><a href="">pages</a></li>
+             </ul>
+          </div>
+          <div class="btns">
+             <button><span>get started</span></button>
+          </div>
+       </header>
+       <div class="content">
+         <div class="content-info">
+           <p class="title">Build your best quality app</p>
+           <h1>Develop your app<br> with quiety</h1>
+           <p class="detils">
+             You might wonder why a design would choose<br> 
+             to use Morem text Patagraphs in English<br> 
+             their native language to use Morem text Patagraphs<br> 
+             in English their native language.
+           </p>
+           <div class="content-btn">
+             <a href="">expiore more</a>
+           </div>
+         </div>
+         <div class="img-content">
+           <div class="main-img">
+             <img src="img/app-two-phone.ba398812.png">
+           </div>
+           <div class="circle"></div>
+         </div>
+       </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+     <script>
+    let animation = anime({
+      targets:'.logo',
+      translateX:[100,0],
+      opacity:[0,1],
+      duration:800,
+      easing:'easeInOutSine',
+      delay:300,
+    });
+
+    anime({
+      targets:'.menu',
+      translateY:[-80,0],
+      opacity:[0,1],
+      duration:800,
+      easing:'easeInOutSine'
+    });
+
+      anime({
+      targets:'.btns',
+      translateX:[-100,0],
+      opacity:[0,1],
+      duration:800,
+      easing:'easeInOutSine',
+      delay:300,
+    });
+
+    anime({
+      targets:'.content-info .title ',
+      translateX:[-60,0],
+      opacity:[0,1],
+      duration:800,
+      easing:'easeInOutSine',
+      delay:500,
+    });
+
+    anime({
+      targets:'.content-info h1 ',
+      translateX:[60,0],
+      opacity:[0,1],
+      duration:800,
+      easing:'easeInOutSine',
+      delay:600,
+    });
+
+    anime({
+      targets:'.content-info .detils',
+      translateX:[-60,0],
+      opacity:[0,1],
+      duration:800,
+      easing:'easeInOutSine',
+      delay:700,
+    });
+
+    anime({
+      targets:'.content-info .content-btn',
+      translateY:[60,0],
+      opacity:[0,1],
+      duration:800,
+      easing:'easeInOutSine',
+      delay:900,
+    });
+
+    anime({
+      targets:'.main-img',
+      translateX:[100,0],
+      opacity:[0,1],
+      duration:1000,
+      easing:'easeInOutSine',
+      delay:1500,
+    });
+
+    anime({
+      targets:'.circle',
+      scale:[0,1],
+      opacity:[0,1],
+      duration:1500,
+      easing:'easeInOutSine',
+      delay:1000,
+    });
+  </script>
+</body>
+</html>
